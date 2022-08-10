@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.container {
+    width: 100%;
+    display: inline-flex;
+    min-height: 100%; 
+}
+
+
+/* Left side css */
+.left-container {
+    background-image: url(images/bg-main-desktop.png);
+    background-size: cover;
+    width: 30%;
+    display: grid;
+    place-items: center;
+    min-height: 100%;
+}
+
+.img-card-back , .img-card-front {
+    position: relative;
+    width: 350px;
+}
+
+.card-front {
+    color: whitesmoke;
+    width: 100%;
+    position: relative;
+    top: 50px;
+    left: 100px;
+    display: block;
+    place-items: center;
+}
+
+.card-back {
+    top: -50px;
+    width: 100%;
+    position: relative;
+    left: 150px;
+    display: grid;
+    place-items: center;
+}
+
+.card-details {
+    position: relative;
+    top: -100px;
+}
+
+.card-details img {
+    position: relative;
+    top: -80px;
+    left: 20px;
+}
+
+.card-details h2 {
+    position: relative;
+    top: -40px;
+    left: 30px;
+}
+
+.card-name {
+    font-size: small;
+    bottom: 20px;
+    left: 30px;
+    position: relative;
+}
+
+.exp-date {
+    font-size: small;
+    position: relative;
+    left: 170px;
+    bottom: 20px;
+}
+.cvc {
+    position: relative;
+    top: -107px;
+    left: 107px;
+}
+
+
+/* Right side css */
+
+.right-container {
+    display: grid;
+    place-items: center;
+    min-height: 100%;
+    width: 70%;
+}
+
+.input-details {
+    width: 300px;
+}
+
+.input-details form {
+    display: block;
+}
+
+input {
+    margin: 5px 0px;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid hsl(279, 6%, 55%);
+}
+
+#card-name-input, form, #cardNumber {
+    width: 100%;
+}
+
+.exp-cvc {
+    display: block;
+}

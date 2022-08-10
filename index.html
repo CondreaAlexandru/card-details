@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Card details</title>
+</head>
+<body>
+  <div class="container">
+    <div class="left-container">
+      <div class="card-front">
+        <img class="img-card-front" src="images/bg-card-front.png" alt="">
+        <div class="card-details">
+          <img src="images/card-logo.svg" alt="" srcset="">
+          <h2 class="card-number">0000 0000 0000 0000</h2>
+          <span class="card-name">Jane Appleseed</span>
+          <span class="exp-date">00/00</span>
+        </div>
+      </div>
+      <div class="card-back">
+        <img class="img-card-back" src="images/bg-card-back.png" alt="">
+        <span class="cvc">000</span>
+      </div>
+      
+    </div>
+    <div class="right-container">
+      <div class="input-details">
+            <p>Cardholder Name:</p>
+            <input type="text" name="cardholderName" id="card-name-input" maxlength="20">
+            <p>Card Number:</p>
+            <input type='text' onkeypress='return formats(this,event)' onkeyup="return numberValidation(event)" placeholder='1234 1234 1234 1234' id="cardNumber">
+          <div>
+            <div class="exp-cvc">
+              <div>
+                <p>Exp. Date (MM/YY)</p>
+                <input type="text" name="" id="month" pattern="[0-9]+" maxlength="02">
+                <input type="text" name="" id="year" pattern="[0-9]+" maxlength="02">
+              </div>
+              <div>
+                <p>CVC</p>
+                <input type="text" name="" id="cvc-inp" pattern="[0-9]+" maxlength="03">
+              </div>
+            </div>
+          </div>
+          <input type="submit" value="Confirm" id="confirm">
+      </div>
+    </div>
+  </div>
+  <div class="confirm-section"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
